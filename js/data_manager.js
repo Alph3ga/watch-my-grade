@@ -19,9 +19,9 @@ class Course{
 }
 
 class Test{
-    #marks;
-    marksSet= false;
-    constructor(totalMarks, weightage){
+    #marks; // private field to store marks acquired, if provided
+    marksSet= false; // if the acquired marks has been provided
+    constructor(totalMarks, weightage){ // the total marks possible in the Test, and the marks it weighs in final grade
         this.totalMarks= totalMarks;
         this.weightage= weightage;
     }
@@ -36,20 +36,20 @@ class Test{
         this.#marks= marks;
     }
 
-    removeMarks(){
+    removeMarks(){ // remove the acquired marks, if any
         this.marksSet= false;
     }
 }
 
 class ExamStructure{
-    tests= [];
+    tests= []; // test array, to be filled
 
     constructor(NumberOfExams, totalMarks){
         this.NumberOfExams= NumberOfExams;
         this.totalMarks= totalMarks;
     }
 
-    get isValid(){
+    get isValid(){ // if the test array is complete
         if(this.tests.length!= this.NumberOfExams){ return false; }
         return true;
     }
