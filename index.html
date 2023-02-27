@@ -2,9 +2,27 @@
 <html lang="en">
     <title>Watch My Grade</title>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/general.css"/>
+        <script src="js/data_manager.js"></script>
     </head>
     <body>
-
+        <div id="title_div" class="main_font">Watch My Grades</div>
+        <div id="create_manual" class="main_font">
+            Click on the 'Create Details' button if you want to create a new Grade Sheet.
+            <br>If you have a downloaded details file, you can upload it instead.
+        </div>
+        <div id="get_details" class="main_font">
+            <div><button id="show_creation_panel">Create Details</button></div>
+            <div>
+                <label for="myfile">Select the Details file:<br>
+                <input type="file" id="file_inp" accept=".json" name="myfile"/></label>
+            </div>
+        </div>
+        <div id="footer" class="main_font">
+            This page was created by Akashneel Raychaudhuri, Student at IIT Kharagpur
+        </div>
     </body>
 </html>
