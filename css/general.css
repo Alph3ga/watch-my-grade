@@ -29,9 +29,10 @@ body{
     background-color: var(--heavy-accent-colour);
 
     width: 100%;
-    height: 5.5vw;
+    height: 7vw;
     padding: 1vw;
     padding-left: 1.5vw;
+    box-sizing: border-box;
 
     border-bottom: 0.3vw solid var(--heavy-accent-comp);
 }
@@ -90,6 +91,7 @@ body{
     bottom: 0;
     text-align: right;
     width: 100%;
+    box-sizing: border-box;
     font-weight: 200;
     font-size: 2vh;
     padding: 1vw;
