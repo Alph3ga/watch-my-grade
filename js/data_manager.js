@@ -59,3 +59,17 @@ class ExamStructure{
     }
 }
 
+function getFromJson(text) {
+    // first check if it's valid json
+    var res= null;
+    try{
+        res= JSON.parse(text);
+    }
+    catch(e){
+        return false;
+    }
+
+    // code to check if it is a valid config file
+}
+
+
