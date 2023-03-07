@@ -1,3 +1,84 @@
 #creation_div {
     display: none;
 }
+
+.course_details {
+    padding: 1vw;
+    border-top: 0.1vw solid var(--light-accent-colour);
+    border-left: 0.1vw solid var(--light-accent-colour);
+    border-radius: 10px;
+    margin: 1vw;
+}
+
+.course_details > div {
+    display: flex;
+    width: 60vw;
+    margin: 0;
+}
+
+.course_details > div > input {
+    width: 3vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.course_details > div > p {
+    padding: 1vw;
+}
+
+.course_details > button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    float: right;
+}
+
+.course_details > p {
+    display: none;
+}
+
+#course_creator {
+    border: 0.2vw solid var(--light-accent-colour);
+    box-sizing: border-box;
+    margin: 2vw;
+    padding: 0;
+    width: calc(100%- 4vw);
+    height: 6.5vw;
+}
+
+#course_creator > input {
+    margin: 2vw;
+    height: 2vw;
+}
+
+#course_creator > input[type= "number"]{
+    width: 3vw;
+}
+
+#course_creator > button {
+    width: 10vw;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    background-color: var(--light-accent-colour);
+    float: right;
+}
+
+#course_creator > button:active {
+    background-color: var(--heavy-accent-comp);
+}
+
+#finalize_details {
+    display: none;
+    margin: auto;
+    border: 0.3vw solid var(--light-accent-colour);
+    border-radius: 5px;
+    background-color: var(--light-accent-colour);
+    height: 5vw;
+    width: fit-content;
+}
+
+#finalize_details:active {
+    background-color: var(--heavy-accent-comp);
+}

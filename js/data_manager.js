@@ -72,4 +72,6 @@ function getFromJson(text) {
     // code to check if it is a valid config file
 }
 
-
+function createCourse(name, credits, numberOfExams){
+    
+}
